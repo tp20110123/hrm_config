@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: hrm-sysmanage
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/sysmanage
+      username: root
+      password: 20110123
+mybatis-plus:
+  mapper-locations: classpath:com/tjc/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.tjc.hrm.domain,com.tjc.hrm.hrm.query
