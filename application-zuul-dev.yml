@@ -5,21 +5,21 @@ spring:
     name: zuul-gateway
 zuul:
   routes:
-    sysmanage.serviceId: hrm-sysmanage # ·şÎñÃû
-    sysmanage.path: /sysmanage/** # °ÑmyUser´òÍ·µÄËùÓĞÇëÇó¶¼×ª·¢¸øuser-provider
-  ignored-services: "*" #ËùÓĞ·şÎñ¶¼²»ÔÊĞíÒÔ·şÎñÃûÀ´·ÃÎÊ
-  prefix: "/services" #¼ÓÒ»¸öÍ³Ò»Ç°×º
-  retryable: true #ÊÇ·ñÖØÊÔ
+    sysmanage.serviceId: hrm-sysmanage # æœåŠ¡å
+    sysmanage.path: /sysmanage/** # æŠŠmyUseræ‰“å¤´çš„æ‰€æœ‰è¯·æ±‚éƒ½è½¬å‘ç»™user-provider
+  ignored-services: "*" #æ‰€æœ‰æœåŠ¡éƒ½ä¸å…è®¸ä»¥æœåŠ¡åæ¥è®¿é—®
+  prefix: "/services" #åŠ ä¸€ä¸ªç»Ÿä¸€å‰ç¼€
+  retryable: true #æ˜¯å¦é‡è¯•
 ribbon:
-  ConnectTimeout: 250 # Á¬½Ó³¬Ê±Ê±¼ä(ms)
-  ReadTimeout: 2000 # Í¨ĞÅ³¬Ê±Ê±¼ä(ms)
-  OkToRetryOnAllOperations: true # ÊÇ·ñ¶ÔËùÓĞ²Ù×÷ÖØÊÔ
-  MaxAutoRetriesNextServer: 2 # Í¬Ò»·şÎñ²»Í¬ÊµÀıµÄÖØÊÔ´ÎÊı
-  MaxAutoRetries: 1 # Í¬Ò»ÊµÀıµÄÖØÊÔ´ÎÊı
+  ConnectTimeout: 250 # è¿æ¥è¶…æ—¶æ—¶é—´(ms)
+  ReadTimeout: 2000 # é€šä¿¡è¶…æ—¶æ—¶é—´(ms)
+  OkToRetryOnAllOperations: true # æ˜¯å¦å¯¹æ‰€æœ‰æ“ä½œé‡è¯•
+  MaxAutoRetriesNextServer: 2 # åŒä¸€æœåŠ¡ä¸åŒå®ä¾‹çš„é‡è¯•æ¬¡æ•°
+  MaxAutoRetries: 1 # åŒä¸€å®ä¾‹çš„é‡è¯•æ¬¡æ•°
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMillisecond: 3000 # ÈÛ¶Ï³¬Ê±Ê±³¤£º3000ms
+            timeoutInMillisecond: 3000
