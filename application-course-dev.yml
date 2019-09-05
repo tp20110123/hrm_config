@@ -10,4 +10,4 @@ spring:
         password: 20110123
 mybatis-plus:
   mapper-locations: classpath: com/tjc/hrm/mapper/*Mapper.xml
-  type-aliases-package: com.tjc.hrm.domain, com.tjc.hrm.hrm.query
+  type-aliases-package: com.tjc.hrm.domain, com.tjc.hrm.query
