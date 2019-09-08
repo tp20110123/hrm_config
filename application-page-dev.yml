@@ -1,0 +1,13 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: hrm-page
+  datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/page
+        username: root
+        password: 20110123
+mybatis-plus:
+  mapper-locations: classpath:com/tjc/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.tjc.hrm.domain,com.tjc.hrm.query
